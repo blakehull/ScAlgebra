@@ -1,10 +1,16 @@
 package com.blake.math.numbertheory
 
-import shapeless.HList
+import shapeless.{HList, HNil}
+
+trait crumbs {
+  val factor: Long
+}
 
 object NumberTheory {
-  private val factors = HList
-  def pMinusOne(n: Long, a: Long): Long = {
-    1
+
+  def pMinusOne(n: Long, a: Long): Option[HList] = {
+
+    Option(factors)
   }
+
 }

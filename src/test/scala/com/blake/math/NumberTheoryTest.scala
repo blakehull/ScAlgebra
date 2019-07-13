@@ -7,7 +7,7 @@ class NumberTheoryTest extends FunSpec {
 
   describe("number theory function tests"){
     it("should give x"){
-      println(pMinusOne(1,4))
+      println(pMinusOne(2L,4))
     }
   }
 
