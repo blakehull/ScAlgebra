@@ -4,6 +4,7 @@ object Definitions {
   object Types {
     type Factor = Long
     type Prime = Long
+    type ModuloTuple = (Long, Long)
     type MathInteger = Long // members of the integers in math are not limited in size
   }
 

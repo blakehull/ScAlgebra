@@ -1,7 +1,8 @@
 package com.blake.math
 
-import org.scalatest.FunSpec
 import com.blake.math.Functions._
+import com.blake.math.numbertheory.validation.{NotRelativelyPrime, Validations}
+import org.scalatest.FunSpec
 
 class FunctionsTest extends FunSpec {
   describe("test them funcs"){
@@ -13,6 +14,13 @@ class FunctionsTest extends FunSpec {
     }
     it("should equal 211"){
       assert(modularPow(439,233,713) == 211)
+    }
+    it("should verify relative primeness"){
+      assert(Validations.validateGCD((2L,3L)) == Right((2,3)))
+      assert(Validations.validateGCD((2L,4L)) == Left(NotRelativelyPrime))
+    }
+    it("should give modular inverses"){
+      assert(modularInverse(3L, 11L) == 4L)
     }
   }
 }

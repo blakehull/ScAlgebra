@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e814c3c-734b-4c2e-b989-0c68e4c856e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/blake/math/Definitions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/blake/math/Functions.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/com/blake/math/FunctionsTest.scala" afterDir="false" />
+    <list default="true" id="6e814c3c-734b-4c2e-b989-0c68e4c856e7" name="Default Changelist" comment="added in the Chinese Remainder Theorem. Added in some Validation methods and new tests for CRT and a Modular Inverse function">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/validation/ValidationOptics.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScAlgebra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ScAlgebra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/blake/math/Definitions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/blake/math/Definitions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/blake/math/Functions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/blake/math/Functions.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/NumberTheory.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/NumberTheory.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/com/blake/math/FunctionsTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/blake/math/FunctionsTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/com/blake/math/NumberTheoryTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/blake/math/NumberTheoryTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ScAlgebra.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blake/math/numbertheory/NumberTheory$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blake/math/numbertheory/NumberTheory$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blake/math/numbertheory/NumberTheory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blake/math/numbertheory/NumberTheory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scalgebra-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scalgebra-1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/ScAlgebra.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/blake/math/NumberTheoryTest$$anonfun$1$$anonfun$apply$mcV$sp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/blake/math/NumberTheoryTest$$anonfun$1$$anonfun$apply$mcV$sp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/blake/math/NumberTheoryTest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/blake/math/NumberTheoryTest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/blake/math/NumberTheoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/blake/math/NumberTheoryTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="241">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -37,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/NumberTheory.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+            <state relative-caret-position="229">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
                 <element signature="e#37#78#0" expanded="true" />
               </folding>
@@ -49,29 +58,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/blake/math/FunctionsTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="441">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
-                <element signature="e#24#52#0" expanded="true" />
+                <element signature="e#24#57#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/blake/math/Functions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/blake/math/Definitions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -79,11 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/blake/math/NumberTheoryTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-              <folding>
-                <element signature="e#24#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -96,10 +84,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/scala/com/blake/math/FunctionsTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/blake/math/Definitions.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/validation/ValidationOptics.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/blake/math/Functions.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/com/blake/math/FunctionsTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/NumberTheory.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/blake/math/NumberTheoryTest.scala" />
       </list>
@@ -109,8 +98,15 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
@@ -123,6 +119,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,6 +158,15 @@
               <item name="scalgebra" type="b2602c69:ProjectViewProjectNode" />
               <item name="scalgebra" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="numbertheory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scalgebra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scalgebra" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -181,8 +188,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,7 +195,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -209,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.NumberTheoryTest">
+  <component name="RunManager" selected="ScalaTest.NumberTheoryTest.number theory function tests should verify">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -229,7 +235,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionsTest.test them funcs should equal 4" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="FunctionsTest.test them funcs should give modular inverses" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="ScAlgebra" />
       <setting name="path" value="com.blake.math.FunctionsTest" />
       <setting name="vmparams" value="" />
@@ -243,14 +249,14 @@
       <envs />
       <setting name="testKind" value="Test name" />
       <setting name="path" value="com.blake.math.FunctionsTest" />
-      <setting name="testName" value="test them funcs should equal 4" />
+      <setting name="testName" value="test them funcs should give modular inverses" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberTheoryTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="FunctionsTest.test them funcs should verify relative primeness" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="ScAlgebra" />
-      <setting name="path" value="com.blake.math.NumberTheoryTest" />
+      <setting name="path" value="com.blake.math.FunctionsTest" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -260,13 +266,33 @@
       <setting name="useUiWithSbt" value="false" />
       <setting name="jrePath" value="" />
       <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="com.blake.math.NumberTheoryTest" />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="com.blake.math.FunctionsTest" />
+      <setting name="testName" value="test them funcs should verify relative primeness" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberTheoryTest.number theory function tests should be 753 = 3*251&#10;number theory function tests should be 779167 = 2003*389&#10;number theory function tests should be 2*2*3*151*7253*19603" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="FunctionsTest.test them funcs shud" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="ScAlgebra" />
+      <setting name="path" value="com.blake.math.FunctionsTest" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <setting name="jrePath" value="" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="com.blake.math.FunctionsTest" />
+      <setting name="testName" value="test them funcs shud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberTheoryTest.number theory function tests should do some stuff" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="ScAlgebra" />
       <setting name="path" value="com.blake.math.NumberTheoryTest" />
       <setting name="vmparams" value="" />
@@ -280,12 +306,12 @@
       <envs />
       <setting name="testKind" value="Test name" />
       <setting name="path" value="com.blake.math.NumberTheoryTest" />
-      <setting name="testName" value="number theory function tests should be 753 = 3*251&#10;number theory function tests should be 779167 = 2003*389&#10;number theory function tests should be 2*2*3*151*7253*19603" />
+      <setting name="testName" value="number theory function tests should do some stuff" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberTheoryTest.number theory function tests should be 779167 = 2003*389" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="NumberTheoryTest.number theory function tests should verify" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="ScAlgebra" />
       <setting name="path" value="com.blake.math.NumberTheoryTest" />
       <setting name="vmparams" value="" />
@@ -299,26 +325,7 @@
       <envs />
       <setting name="testKind" value="Test name" />
       <setting name="path" value="com.blake.math.NumberTheoryTest" />
-      <setting name="testName" value="number theory function tests should be 779167 = 2003*389" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberTheoryTest.number theory function tests should be" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="ScAlgebra" />
-      <setting name="path" value="com.blake.math.NumberTheoryTest" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <setting name="jrePath" value="" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="com.blake.math.NumberTheoryTest" />
-      <setting name="testName" value="number theory function tests should be" />
+      <setting name="testName" value="number theory function tests should verify" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -343,11 +350,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.NumberTheoryTest" />
-        <item itemvalue="ScalaTest.NumberTheoryTest.number theory function tests should be 779167 = 2003*389" />
-        <item itemvalue="ScalaTest.NumberTheoryTest.number theory function tests should be 753 = 3*251&#10;number theory function tests should be 779167 = 2003*389&#10;number theory function tests should be 2*2*3*151*7253*19603" />
-        <item itemvalue="ScalaTest.FunctionsTest.test them funcs should equal 4" />
-        <item itemvalue="ScalaTest.NumberTheoryTest.number theory function tests should be" />
+        <item itemvalue="ScalaTest.NumberTheoryTest.number theory function tests should verify" />
+        <item itemvalue="ScalaTest.NumberTheoryTest.number theory function tests should do some stuff" />
+        <item itemvalue="ScalaTest.FunctionsTest.test them funcs should give modular inverses" />
+        <item itemvalue="ScalaTest.FunctionsTest.test them funcs should verify relative primeness" />
+        <item itemvalue="ScalaTest.FunctionsTest.test them funcs shud" />
       </list>
     </recent_temporary>
   </component>
@@ -369,68 +376,76 @@
       <option name="project" value="LOCAL" />
       <updated>1563062235249</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added in tests, Pollard's p minus 1 method. There needs to be some changes done so we don't need to flush the factors list after each run. Maybe this can be done with an execute command or further nesting the actual factoring further down where we can say &quot;okay, run the program save the output, flush factors and return&quot; -- that makes more sense than running flush factors after.&#10;&#10;Basically, I would argue that pMinusOne should be pMinusOne(args){ val output = hiddenPMinusOne &#10;flushFactors&#10;output}">
+      <created>1563085044274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563085044274</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be - 2019.07.14 at 00h 05m 33s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FunctionsTest_test_them_funcs_should_give_modular_inverses - 2019.08.03 at 00h 37m 11s.xml">
+      <configuration name="FunctionsTest.test them funcs should give modular inverses" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be - 2019.07.14 at 00h 07m 27s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FunctionsTest_test_them_funcs_should_give_modular_inverses - 2019.08.03 at 00h 38m 02s.xml">
+      <configuration name="FunctionsTest.test them funcs should give modular inverses" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be - 2019.07.14 at 00h 07m 53s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FunctionsTest_test_them_funcs_should_give_modular_inverses - 2019.08.03 at 00h 41m 52s.xml">
+      <configuration name="FunctionsTest.test them funcs should give modular inverses" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be - 2019.07.14 at 00h 09m 27s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FunctionsTest_test_them_funcs_should_give_modular_inverses - 2019.08.03 at 00h 42m 28s.xml">
+      <configuration name="FunctionsTest.test them funcs should give modular inverses" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be - 2019.07.14 at 00h 10m 18s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_do_some_stuff - 2019.08.03 at 01h 09m 58s.xml">
+      <configuration name="NumberTheoryTest.number theory function tests should do some stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FunctionsTest_test_them_funcs_should_equal_4 - 2019.07.14 at 00h 10m 28s.xml">
-      <configuration name="FunctionsTest.test them funcs should equal 4" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_do_some_stuff - 2019.08.03 at 01h 17m 22s.xml">
+      <configuration name="NumberTheoryTest.number theory function tests should do some stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be_753_=_3_251_number_theory_function_tests_should_be_779167_=_2003_389_number_theory_function_tests_should_be_2_2_3_151_7253_19603 - 2019.07.14 at 00h 10m 57s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be 753 = 3*251&#10;number theory function tests should be 779167 = 2003*389&#10;number theory function tests should be 2*2*3*151*7253*19603" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_do_some_stuff - 2019.08.03 at 01h 18m 44s.xml">
+      <configuration name="NumberTheoryTest.number theory function tests should do some stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be_753_=_3_251_number_theory_function_tests_should_be_779167_=_2003_389_number_theory_function_tests_should_be_2_2_3_151_7253_19603 - 2019.07.14 at 00h 11m 07s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be 753 = 3*251&#10;number theory function tests should be 779167 = 2003*389&#10;number theory function tests should be 2*2*3*151*7253*19603" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_verify - 2019.08.03 at 01h 19m 00s.xml">
+      <configuration name="NumberTheoryTest.number theory function tests should verify" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be_753_=_3_251_number_theory_function_tests_should_be_779167_=_2003_389_number_theory_function_tests_should_be_2_2_3_151_7253_19603 - 2019.07.14 at 00h 11m 41s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be 753 = 3*251&#10;number theory function tests should be 779167 = 2003*389&#10;number theory function tests should be 2*2*3*151*7253*19603" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_verify - 2019.08.03 at 01h 30m 01s.xml">
+      <configuration name="NumberTheoryTest.number theory function tests should verify" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_be_779167_=_2003_389 - 2019.07.14 at 00h 11m 48s.xml">
-      <configuration name="NumberTheoryTest.number theory function tests should be 779167 = 2003*389" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="NumberTheoryTest_number_theory_function_tests_should_verify - 2019.08.03 at 01h 30m 50s.xml">
+      <configuration name="NumberTheoryTest.number theory function tests should verify" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22310969" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20127796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32854578" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32854578" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994614" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32908705" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32854578" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32854578" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32854578" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.32960597" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -438,7 +453,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added in a few more things" />
-    <option name="LAST_COMMIT_MESSAGE" value="added in a few more things" />
+    <MESSAGE value="added in tests, Pollard's p minus 1 method. There needs to be some changes done so we don't need to flush the factors list after each run. Maybe this can be done with an execute command or further nesting the actual factoring further down where we can say &quot;okay, run the program save the output, flush factors and return&quot; -- that makes more sense than running flush factors after.&#10;&#10;Basically, I would argue that pMinusOne should be pMinusOne(args){ val output = hiddenPMinusOne &#10;flushFactors&#10;output}" />
+    <MESSAGE value="added in the Chinese Remainder Theorem. Added in some Validation methods and new tests for CRT and a Modular Inverse function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added in the Chinese Remainder Theorem. Added in some Validation methods and new tests for CRT and a Modular Inverse function" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/blake/math/AppTest.java" />
@@ -449,31 +466,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ScAlgebra.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="483">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/blake/math/Definitions.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="84">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/wix/accord-core_2.11/0.7.3/accord-core_2.11-0.7.3.jar!/com/wix/accord/combinators/GeneralPurposeCombinators.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/wix/accord-api_2.11/0.7.3/accord-api_2.11-0.7.3.jar!/com/wix/accord/package.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3-sources.jar!/org/scalatest/OutcomeOf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3-sources.jar!/org/scalatest/Transformer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3-sources.jar!/org/scalatest/TestSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3-sources.jar!/org/scalatest/FunSpecLike.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="463" column="49" selection-start-line="463" selection-start-column="49" selection-end-line="463" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3-sources.jar!/org/scalatest/Outcome.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3-sources.jar!/org/scalatest/Engine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="288" column="6" selection-start-line="288" selection-start-column="6" selection-end-line="288" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/validation/ValidationOptics.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#48#99#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/blake/math/Functions.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/blake/math/numbertheory/NumberTheory.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        <state relative-caret-position="229">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
             <element signature="e#37#78#0" expanded="true" />
           </folding>
@@ -482,21 +568,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/blake/math/FunctionsTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="441">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
-            <element signature="e#24#52#0" expanded="true" />
+            <element signature="e#24#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/blake/math/NumberTheoryTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="e#24#73#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -517,6 +600,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -528,6 +612,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -539,6 +624,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -562,6 +648,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.chuusai:shapeless_2.11:2.3.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

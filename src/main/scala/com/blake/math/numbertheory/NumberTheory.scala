@@ -1,7 +1,8 @@
 package com.blake.math.numbertheory
 
 import com.blake.math.Definitions.Types._
-import com.blake.math.Functions.{modularPow, gcd}
+import com.blake.math.Functions._
+import com.blake.math.numbertheory.validation.{NotRelativelyPrime, Validations}
 
 import scala.collection.mutable.ListBuffer
 
@@ -27,6 +28,24 @@ object NumberTheory {
     }else{
       pMinusOne(n/divisor, solution = solution)
     }
+  }
+
+  def ChineseRemainder(equations: List[ModuloTuple]): Either[String, Long] = {
+    val relativelyPrime: Boolean = equations.map(_._2).
+      combinations(2).map(e => (e(0), e(1))).toList.
+      map(e => Validations.validateGCD(e).isRight).
+      forall(_ == true)
+
+    if(relativelyPrime){
+      val solutionMod = equations.map(_._2).product
+      val z: List[Long] = equations.map(solutionMod/_._2)
+      val inverseZ: List[Long] = (z zip equations.map(_._2)).map(e => modularInverse(e._1, e._2))
+      val solution = (inverseZ zip z).map(x => x._1 * x._2) zip equations.map(_._1)
+      Right(solution.map(e => e._1 * e._2).sum % solutionMod)
+    }else{
+      Left(NotRelativelyPrime.errorMessage)
+    }
+
   }
 
 

@@ -20,6 +20,15 @@ class NumberTheoryTest extends FunSpec {
       assert(pMinusOne(257631172908L, solution = 257631172908L) == ListBuffer(2,2,3,151,7253,19603))
       flushFactors
     }
+    it("should verify ChineseRemainder"){
+      val verifyMod = ChineseRemainder(List((2L,3L), (3L,5L)))
+      assert(verifyMod.isRight)
+      assert(verifyMod.right.get % 3 == 2 && verifyMod.right.get % 5 == 3)
+    }
+    it("should verify"){
+      val verifyMod = ChineseRemainder(List((6L,11L), (13L,16L), (9L, 21L), (19L, 25L)))
+      assert(verifyMod.right.get == 89469)
+    }
   }
 
 }

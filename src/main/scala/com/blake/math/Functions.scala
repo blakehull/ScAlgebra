@@ -7,6 +7,13 @@ object Functions {
     else {modularPow(b, e - 1, m, result*b % m)}
   }
 
+  def modularInverse(a: Long, m: Long): Long = {
+    val min: Long = a % m
+    (1L to m).collectFirst {
+      case x: `Long` if (min * x) % m == 1 => x
+    }.getOrElse(1L)
+  }
+
   def gcd(a: Long, b: Long): Long = {
     val collected = Array(a,b)
     if(b > a){

@@ -16,6 +16,7 @@
     <scala.version>2.11</scala.version>
     <scala-library.version>${scala.version}.8</scala-library.version>
     <app.docker.name>scalgebra</app.docker.name>
+    <scala.tools.version>2.11</scala.tools.version>
     <docker.artifacts.dir>artifacts</docker.artifacts.dir>
   </properties>
 
@@ -57,7 +58,6 @@
       <version>${scala-library.version}</version>
       <scope>provided</scope>
     </dependency>
-
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-compiler</artifactId>
