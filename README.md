@@ -13,19 +13,21 @@
 Abstract Algebra and Number Theory Package for Scala
 
 ## Number Theory
+
 ### Basic Functions
-Modular Inverses
-GCD
-Modular Powers
+* Modular Inverses
+* GCD
+* Modular Powers
+
 ### Specific Functions
-Chinese Remainder Theorem
-P-1 Factoring
-Coming Soon
-  Euler's Totient Function
-  Additional Primality Functions
+ -Chinese Remainder Theorem    
+ -P-1 Factoring    
+ --Coming Soon    
+ -Euler's Totient Function    
+ -Additional Primality Functions    
 
 ## Abstract Algebra
-Coming Soon 
-  Field Extensions
-  Primality Testing for Polynomials aka Irreducibility Testing
-  Generator Detection
+ Coming Soon     
+  Field Extensions    
+  Primality Testing for Polynomials aka Irreducibility Testing    
+  Generator Detection    
